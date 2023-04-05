@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 2px;00vh;
+}
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&family=Tapestry&display=swap');
+
+body{
+    background-color:black;
+}
+
+figure{
+    text-align:center;
+    height: 200px;
+}
+
+h1{
+    text-decoration:solid;
+    display: block;
+    color:gold;
+    height: 50px;
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+}
+
+p{
+    text-decoration:solid;
+    display: block;
+    color:deeppink;
+    height: 30px;
+    font-family: 'Tapestry', cursive;
+    text-align:center;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+    color:chartreuse;
+    height: 30px;
+    font-family: 'Tapestry', cursive;
+    text-align: center;
+    border:solid
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 100px;
+    color:deeppink;
+    font-family: 'Tapestry', cursive;
+}
+
+/* ////////////////////////// */
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exemplo de troca de cor com JS</title>
+	<style>
+		body {
+			background-color: #ccc;
+		}
+	</style>
+</head>
+<body>
+	<button onclick="trocarCor()">Trocar cor</button>
+
+	<script>
+		function trocarCor() {
+			var novaCor = prompt("Digite a nova cor de fundo (em hexadecimal):");
+			document.body.style.backgroundColor = novaCor;
+		}
+	</script>
+</body>
+</html>
